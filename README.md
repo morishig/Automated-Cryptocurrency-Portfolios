@@ -9,7 +9,10 @@ Name of QuantLet : Automated Cryptocurrency Portfolios: Portfolio Optimization, 
 
 Published in : edoc-Server Humboldt Univerität zu Berlin
 
-Description : 'Markowitz (Global Minimum Variance, maximum Sharpe), Hierarchical Risk Parity and three simple portfolios: equally weighted, inverse volatility and inverse variance in the novel asset class of cryptocurrencies. The CRyptocurrency IndeX CRIX is used as benchmark. Portfolio optimization is computed using 120 days of daily historical data with portfolio rebalancing taking place every 7 days and 30 days.'
+Description : 'Markowitz (Global Minimum Variance, maximum Sharpe), Hierarchical Risk Parity and three simple portfolios: 
+equally weighted, inverse volatility and inverse variance in the novel asset class of cryptocurrencies. The CRyptocurrency 
+IndeX CRIX is used as benchmark. Portfolio optimization is computed using 120 days of daily historical data with portfolio 
+rebalancing taking place every 7 days and 30 days.'
 
 Keywords : 'portfolio optimization, mean-variance optimization, Markowitz, modern portfolio theory, random matrix theory,
 eigenvalue-clipping, hierarchical risk parity, cryptocurrencies, CRIX CRyptocurrency IndeX'
