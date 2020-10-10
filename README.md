@@ -7,7 +7,7 @@
 
 Name of QuantLet : Automated Cryptocurrency Portfolios: Portfolio Optimization, an Empirical Study.
 
-Published in : edoc-Server Humboldt Univerität zu Berlin
+Published in : edoc-Server Humboldt Univerität zu Berlin Wirtschaftswissenschaften Fakultät
 
 Description : 'Markowitz (Global Minimum Variance, maximum Sharpe), Hierarchical Risk Parity and three simple portfolios: 
 equally weighted, inverse volatility and inverse variance in the novel asset class of cryptocurrencies. The CRyptocurrency 
