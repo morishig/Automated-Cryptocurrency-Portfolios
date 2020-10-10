@@ -20,8 +20,7 @@ def minimum_variance(means, cov):
         cvx.sum(x) == 1,  # fully-invested
         x >= -1,  # lower bound for weights
         x <= 1,  # upper bound for weights
-        expected_return>=rf# allocation <= 1, # long-only
-        #cvx.sum(cvx.abs(x)) <= 1 # Leverage max.
+        expected_return>=rf
     ]
 
     problem = cvx.Problem(objective, constraints)
@@ -33,11 +32,7 @@ time_window_days = 120
 time_window_days_minus1 = time_window_days - 1
 rebalancing_period = 7
 
-# df = pd.read_excel(r'/Users/gmmtakane/Desktop/Thesis/Pruebas.xlsx')
 df = pd.read_excel(r'/Users/gmmtakane/Desktop/Thesis/Prices.xlsx')
-# df = pd.read_excel(r'/Users/gmmtakane/Desktop/Thesis/PS.xlsx')
-# df = pd.read_excel(r'/Users/gmmtakane/Desktop/Thesis/part2.xlsx') #2 weeks after the problematic week
-# df = pd.read_excel(r'/Users/gmmtakane/Desktop/Thesis/problem.xlsx')
 
 """Get the dataframe and set indexes and columns"""
 df['date'] = [datetime.strptime(d, '%d-%m-%Y') for d in df['date']]
