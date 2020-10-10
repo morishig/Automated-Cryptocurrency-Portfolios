@@ -5,22 +5,18 @@
 
 ```yaml
 
-Name of QuantLet : SFEustb
+Name of QuantLet : Master Thesis - Automated Cryptocurrency Portfolios: Portfolio Optimization, an Empirical Study.
 
-Published in : Statistics of Financial Markets
+Published in : edoc-Server Humboldt Univerität zu Berlin
 
-Description : 'Shows a 3-month U.S. Treasury bill daily yield from 1996 to 2019 as an approximation
-of the short rate.'
+Description : 'Markowitz (Global Minimum Variance, maximum Sharpe), Hierarchical Risk Parity and three simple portfolios: equally weighted, inverse volatility and inverse variance in the novel asset class of cryptocurrencies. The CRyptocurrency IndeX CRIX is used as benchmark. Portfolio optimization is computed using 120 days of daily historical data with portfolio rebalancing taking place every 7 days and 30 days.'
 
-Keywords : 'approximation, asset, data visualization, financial, graphical representation,
-interest-rate, plot, short-rate, time-series, visualization, yield'
+Keywords : 'portfolio optimization, mean-variance optimization, Markowitz, modern portfolio theory, random matrix theory,
+eigenvalue-clipping, hierarchical risk parity, cryptocurrencies, CRIX CRyptocurrency IndeX'
 
-See also : SFECIRmle, SFEcir, SFEscomCIR
+Author : Morishige Takane, Guillermo Masayuki
 
-Author : Guillermo Morishige
+Submitted : Sat, October 10 2020
 
-Submitted : Mon, January 7 2019
+Datafiles : Prices.xml
 
-Datafiles : None
-
-Example : Plot of 3-month U.S. Treasury bill daily yield from 1996 to 2019.
