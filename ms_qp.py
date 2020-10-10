@@ -6,37 +6,9 @@ from datetime import timedelta
 from datetime import datetime
 from pypfopt import risk_models
 from pypfopt import expected_returns
-"""
+
 def maximum_Sharpe(means, cov):
     y = cvx.Variable(len(means))
-    k = cvx.Variable()
-
-    expected_return = y.T @ means
-    expected_vol = cvx.quad_form(y, cov)
-
-    utility = expected_vol
-    objective = cvx.Minimize(utility)
-
-    constraints = [
-        cvx.sum(y) == k,  # fully-invested
-        y >= -1, #lower bound for weights
-        y <= 1, #upper bound for weights
-        expected_return == 1,
-        k>=0,
-        #allocation <= 1, # long-only
-        #cvx.sum(cvx.abs(x)) <= 2 # Leverage max.
-    ]
-
-    problem = cvx.Problem(objective, constraints)
-    problem.solve()
-
-    x = y / k
-
-    return np.array(y.value.flat).round(4), expected_return.value, expected_vol.value, k.value,x.value
-"""
-def maximum_Sharpe(means, cov):
-    y = cvx.Variable(len(means))
-    #k = cvx.Variable()
 
     expected_return = y.T @ means
     expected_vol = cvx.quad_form(y, cov)
@@ -46,12 +18,6 @@ def maximum_Sharpe(means, cov):
 
     constraints = [
         expected_return == 1,  # fully-invested
-        #y >= -1, #lower bound for weights
-        #y <= 1, #upper bound for weights
-        #expected_return == 1,
-        #k>=0,
-        #allocation <= 1, # long-only
-        #cvx.sum(cvx.abs(x)) <= 2 # Leverage max.
     ]
 
     problem = cvx.Problem(objective, constraints)
@@ -63,11 +29,7 @@ time_window_days = 120
 time_window_days_minus1 = time_window_days - 1
 rebalancing_period = 7
 
-#df = pd.read_excel(r'/Users/gmmtakane/Desktop/Thesis/Pruebas.xlsx')
 df = pd.read_excel(r'/Users/gmmtakane/Desktop/Thesis/Prices.xlsx')
-#df = pd.read_excel(r'/Users/gmmtakane/Desktop/Thesis/PS.xlsx')
-#df = pd.read_excel(r'/Users/gmmtakane/Desktop/Thesis/part2.xlsx') #2 weeks after the problematic week
-#df = pd.read_excel(r'/Users/gmmtakane/Desktop/Thesis/problem.xlsx')
 
 """Get the dataframe and set indexes and columns"""
 df['date'] = [datetime.strptime(d, '%d-%m-%Y') for d in df['date']]
