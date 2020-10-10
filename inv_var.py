@@ -11,11 +11,7 @@ time_window_days = 120
 time_window_days_minus1 = time_window_days - 1
 rebalancing_period = 7
 
-#df = pd.read_excel(r'/Users/gmmtakane/Desktop/Thesis/Pruebas.xlsx')
 df = pd.read_excel(r'/Users/gmmtakane/Desktop/Thesis/Prices.xlsx')
-#df = pd.read_excel(r'/Users/gmmtakane/Desktop/Thesis/PS.xlsx')
-#df = pd.read_excel(r'/Users/gmmtakane/Desktop/Thesis/part2.xlsx') #2 weeks after the problematic week
-#df = pd.read_excel(r'/Users/gmmtakane/Desktop/Thesis/problem.xlsx')
 
 """Get the dataframe and set indexes and columns"""
 df['date'] = [datetime.strptime(d, '%d-%m-%Y') for d in df['date']]
