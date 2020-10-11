@@ -23,3 +23,11 @@ Submitted : Sat, October 10 2020
 
 Datafiles : Prices.xlsx
 
+```
+
+![Picture1](EF.png)
+
+```
+
+![Picture2](Port.png)
+
