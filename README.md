@@ -27,7 +27,5 @@ Datafiles : Prices.xlsx
 
 ![Picture1](EF.png)
 
-```
-
 ![Picture2](Port.png)
 
