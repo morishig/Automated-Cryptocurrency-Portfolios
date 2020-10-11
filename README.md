@@ -25,7 +25,15 @@ Datafiles : Prices.xlsx
 
 ```
 
-![Picture1](EF.png)
+![Picture1](Port.png)
 
-![Picture2](Port.png)
+```yaml
+Codes: The codes in the repository are according the following abbreviations 
 
+MV: minimum variance
+MS: maximum Sharpe ratio
+HRP: hierarchical risk parity
+RMT (Random Matrix Theory): eigenvalue-clipping of the covariance matrix
+QP: quadratic programming versions
+
+```
