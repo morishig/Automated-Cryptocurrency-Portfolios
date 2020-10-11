@@ -30,10 +30,10 @@ Datafiles : Prices.xlsx
 ```yaml
 Codes: The codes in the repository follow the subsequent abbreviations:
 
-      MV: minimum variance
-      MS: maximum Sharpe ratio
-      HRP: hierarchical risk parity
-      RMT (Random Matrix Theory): eigenvalue-clipping of the covariance matrix
-      QP: quadratic programming versions
+   MV: minimum variance
+   MS: maximum Sharpe ratio
+   HRP: hierarchical risk parity
+   RMT (Random Matrix Theory): eigenvalue-clipping of the covariance matrix
+   QP: quadratic programming versions
 
 ```
